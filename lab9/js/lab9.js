@@ -5,13 +5,14 @@
  */
 
  var outputEl =
- document.getElementById("div");
+ document.getElementById("output");
 
  var new1El = document.createElement("p");
- new1El = new1El.style.color = "red";
+ new1El.style.color = "red";
+
+ outputEl.appendChild(new1El);
 
  var new2El = document.createElement("h1");
- new2El = new2El.style.color = "green";
+ new2El.style.color = "green";
 
- targetEl.appendChild(new1El);
- targetEl.appendChild(new2El);
+ outputEl.appendChild(new2El);
