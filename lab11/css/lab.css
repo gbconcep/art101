@@ -1,0 +1,47 @@
+h1 {
+    color: blue;
+    font-size: 200%
+}
+
+.purple {
+    color: #a44cd3;
+}
+
+.pink {
+    color: #e53f71;
+}
+
+#challenges {
+  font-family: "Times New Roman";
+  text-indent: 20px;
+  margin-left: 10px;
+  width: 1200px;
+  font-size: 20px;
+}
+
+#problems {
+  font-family: "Times New Roman";
+  text-indent: 20px;
+  margin-left: 10px;
+  width: 1200px;
+  font-size: 20px;
+}
+
+#content {
+    width: 1200px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #444444;
+    font-size: 20px;
+}
+
+#content {
+    background-color: #cccccc;
+    width: 1200px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #444444;
+    font-size: 20px;
+}
