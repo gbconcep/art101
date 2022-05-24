@@ -14,8 +14,8 @@ console.log("Yes, my JS is running");
 
 function fizzBuzz() {
   console.log("Yes, my function is running");
-  var str = ''
   for (var i=1; i<=200; i++) {
+    var str = ''
     if (i % 3 == 0) {
       str += "Fizz";
     }
