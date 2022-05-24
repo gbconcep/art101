@@ -14,7 +14,7 @@ body,
 #background {
   width: 100vw;
   min-height: 100vh;
-  background-color: cyan;
+  background-color: lightgray;
 }
 
 #content {
