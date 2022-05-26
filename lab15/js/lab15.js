@@ -1,27 +1,30 @@
+/*
+ * Author: Gavin Concepcion <gbconcep@ucsc.edu>
+ * Created: 05/25/2022
+ * License: Public Domain
+ */
+
+var actButton = document.getElementById("activate")
+
+actButton.addEventListener("click", function(){
 // Using the core $.ajax() method
 $.ajax({
     // The URL for the request (from the api docs)
-    url: "https://yourapiendpoint.com/",
+    url: "https://yesno.wtf/api",
     // The data to send (will be converted to a query string)
-    data: {
-            // here is where any data required by the api
-            //   goes (check the api docs)
-            id: 123,
-            api_key: "blahblahblah",
-          },
     // Whether this is a POST or GET request
     type: "GET",
+  })
     // The type of data we expect back
-    dataType : "json",
-    // What do we do when the api call is successful
-    //   all the action goes in here
-    success: function(data) {
-        // do stuff
-        console.log(data);
-    },
-    // What we do if the api call fails
-    error: function (jqXHR, textStatus, errorThrown) {
-        // do stuff
-        console.log("Error:", textStatus, errorThrown);
-    }
-})
+    .done(function(data){
+      console.log("Worked!")
+      console.log(JSON.stringify(data));
+
+      $("#output").append("<h1>" + data.answer + "</h1>");
+      $("#output").append("<img src=" + data.image + ">");
+    })
+
+    .fail(function(request, error){
+    	$("#output").html("Something broke");
+    })
+  })
